@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="description" content="Página web de blog de comida">   
+
+    <link rel="preload" href="estilos/estilo.css" as="style">
+    <link rel="stylesheet" href="estilos/estilo.css">   
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Cabecera de la pagina-->
+    <header>
+        <!--Logo-->
+        <div class="logo centrar-texto">
+            <img src="imagenes/logo.png" width="60" height="60" alt="">
+            <a href="titulo">
+                <h1 class="no-margin">Blog Restaurante</h1>
+            </a>
+            
+            <div class="idioma">
+                <span class="en">English</span>
+                <input type="checkbox" class="check">
+                <span class="es">Español</span>
+            </div>
+            
+        </div>
+
+        <!--Navbar de navegación por las 3 paginas(home, menu, confirmacion)-->
+        <div class="navegacion">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="confirmacion.html">Confirmacion</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Contenedor principal del home-->
+    <main class="contenedor-principal">
+
+        <!--Pagina de inicio-->
+        <section class="presentacion">
+            <h2>Somos uno de los mejores restaurantes de la ciudad</h2>
+            <p>En nuestro restaurante, nos enorgullecemos de ser reconocidos como uno de los mejores establecimientos culinarios de la ciudad. Nuestra pasión por la alta calidad, la atención meticulosa a los detalles y la creatividad en la cocina nos han permitido.</p>
+            <a href="menu.html" class="boton">Ver más</a>
+        </section>
+
+        <!--Presentación del restaurante-->
+        <section class="fundadores">
+            <div class="info">
+                <h3>Experiencia culinaria</h3>
+                <p>En nuestro restaurante, te ofrecemos una experiencia culinaria única. Cada plato es cuidadosamente preparado por nuestros talentosos chefs, utilizando ingredientes frescos y de alta calidad. Nuestro ambiente acogedor y elegante es el lugar perfecto para disfrutar de una comida inolvidable con amigos y seres queridos. Te invitamos a explorar una variedad de platos deliciosos que deleitarán tus sentidos y te harán regresar por más.</p>
+                <a href="" class="boton">Ver menú</a>
+            </div>
+            <div class="imagen"></div>
+        </section>
+
+        <!--Servicios que ofrece el restaurante-->
+        <section class="servicios">
+            <h3 class="text-claro">Servicios</h3>
+            <div class="container-cards">
+                <div class="cards">
+                    <img src="imagenes/chinees-food-3-1323899.jpg" alt="">
+                    <h3>Comida Oriental</h3>
+                    <p>Descubre el encanto de la comida oriental en nuestro restaurante. Nuestra cocina oriental te llevará en un viaje de sabores exóticos y deliciosos. Desde sushi fresco y rolls creativos hasta platos tradicionales como el arroz frito, el curry y el ramen, nuestra amplia selección de platos orientales satisface todos los paladares. </p>
+                    <a href="" class="boton">Contratar</a>
+                </div>
+                <div class="cards">
+                    <img src="imagenes/repartidor-comida-entregando-comida-scooter.jpg" alt="">
+                    <h3>Domicilios</h3>
+                    <p>¿Prefieres disfrutar de nuestros platos en la comodidad de tu hogar? Ofrecemos un servicio de entrega a domicilio para que puedas disfrutar de nuestra deliciosa comida donde quiera que estés. Simplemente realiza tu pedido en línea o por teléfono, y te entregaremos tus platos favoritos directamente en tu puerta. </p>
+                    <a href="" class="boton">Contratar</a>
+                </div>
+                <div class="cards">
+                    <img src="imagenes/gente-contenta-que-tintinea-vidrios-cafe.jpg" alt="">
+                    <h3>Reservas especiales</h3>
+                    <p>En nuestro restaurante, valoramos las ocasiones especiales. Ya sea una cena romántica, una celebración de cumpleaños o un evento corporativo, estamos aquí para hacer que tu experiencia sea inolvidable. Ofrecemos servicios de reservas especiales para grupos grandes, personalización de menús y un ambiente acogedor para cualquier evento importante en tu vida.</p>
+                    <a href="" class="boton">Contratar</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Ubiación del restaurante-->
+        <section class="ubicacion">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1698963960479!6m8!1m7!1sOgek8rEZhS-FBohXOmKTBQ!2m2!1d4.686331354492867!2d-74.05032252592318!3f209.8476995025107!4f13.628840241204571!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <!--Pie de pagina del blog del restaurante-->
+    <footer>
+        <div class="logo centrar-texto">
+            <img src="imagenes/logo.png" width="60" height="60" alt="">
+            <a href="titulo">
+                <h1 class="no-margin">Blog Restaurante</h1>
+            </a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="javascript/animaciones.js"></script>
+</body>
+</html>

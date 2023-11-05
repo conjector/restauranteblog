@@ -1,0 +1,461 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Playfair Display', serif;
+    --primario: #784D3C;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #e1e1e1;
+    --txt: #181818;
+    --rojo: rgb(134, 15, 15);
+}
+
+html{
+    
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fuenteParrafos);
+    font-size: 1.5rem;
+overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.idioma {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    font-size: 15px;
+}
+
+.en {
+    color: #181818;
+}
+.es {
+    color: #181818;
+}
+
+.check {
+    position: relative;
+    width: 50px;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid var(--txt);
+    box-sizing: border-box;
+}
+
+.check:checked:after {
+    left: 25px;
+    border: 2px solid #1a1818;
+}
+
+.check:checked:before {
+    background-color: rgb(0, 255, 34);
+}
+
+a{
+    text-decoration: none;
+    color: none;
+}
+
+h1 {
+    font-size: 35px;
+    color: var(--txt);
+    margin: 0px;
+}
+
+
+img{
+    max-width: 100%;
+}  
+
+/*Utilidades*/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    
+    padding-block: 20px;
+}
+
+.titulo {
+    color: var(--txt);
+}
+
+.navegacion {
+    width: 100%;
+    background-color: var(--txt);
+}
+
+.navegacion ul {
+    display: flex;
+    margin: 15px;
+    justify-content: space-evenly;
+}
+
+.navegacion ul li {
+    text-decoration: none;
+    color: var(--blanco);
+    list-style: none;
+    font-size: 18px;
+    font-weight: bolder;
+    
+}
+
+.navegacion ul li a {
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--rojo);
+    transition: all .5s;
+}
+
+.navegacion ul li a:hover{
+    color: var(--rojo);
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all .5s ease-in-out;
+}
+
+h3, h2 {
+    margin: 10px auto;
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--rojo);
+    transition: all .5s ease-in;
+}
+
+h3:hover, h2:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .5s;  
+
+}
+
+.contenedor-principal {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.contenedor-principal section {
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    --opacidad-negro: 0.6;
+    min-height: 1000px;
+    max-height: 1500px;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('../imagenes/estilo-vida.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.presentacion p{
+    margin: 0 auto;
+    text-align: center;
+    word-break: break-all;
+    max-width: 60%;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.info {
+    color: var(--txt);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.fundadores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 40px;
+    height: 600px;
+}
+
+.fundadores .imagen {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background-image: url('../imagenes/comida.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.boton {
+    margin: 10px auto;
+    width: 200px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: var(--rojo);
+    color: #fff;
+    font-weight: 900;
+}
+
+.text-claro {
+    color: #fff;
+    border-bottom: #fff;
+}
+
+.boton:hover {
+    background-color: rgb(58, 7, 7);;
+}
+.servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 40px;
+    min-height: 700px;
+    
+    --opacidad-negro: 0.6;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('../imagenes/fine-dining-food-presentation-1327952.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.container-cards .cards {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    font-size: 18px;
+}
+
+.servicios div img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+}
+
+.ubicacion {
+    padding: 40px 20px;
+    margin:0px;
+    color: #fff;
+    background-color: var(--txt);
+}
+
+.ubicacion h3 {
+    margin-block: 20px;
+}
+
+footer {
+    background-color: #fff;
+    padding: 10px;
+
+}
+
+.fondo-confirmacion{
+    padding: 50px;
+    color: #fff;
+    min-height: 100vh;
+
+    --opacidad-negro: 0.6;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('../imagenes/fine-dining-food-presentation-1327952.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo-confirmacion h3 {
+    margin-top: 0px;
+}
+
+.formulario {
+    padding: 30px 60px;
+    color: var(--txt);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: left;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario .campo__label {
+    font-size: 18px;
+    width: 100%;
+}
+
+.formulario .campo__field, input[type="date"] {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid var(--rojo);
+}
+.duo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+.contenedor-menu {
+    padding: 20px;
+} 
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ 
+}
+
+.categorias a {
+    border: 1px solid var(--rojo);
+    color: var(--rojo);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.seleccionado {
+    background-color: var(--rojo);
+    color: #fff !important;
+    transition: all .2s ease-in;
+}
+
+.resultados {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 40px;
+    width: 100%;
+}
+
+.resultados .card {
+    display: grid;
+
+    grid-template-areas: "titulo precio imagen"
+                         "descripcion descripcion imagen";
+    column-gap: 20px;
+    max-width: 100%;
+    min-height: 130px;
+    padding: 20px;
+    border: 1px solid #8a8a8a;
+    border-radius: 20px;
+
+}
+
+.resultados .card:hover {
+    background-color: #8a8a8a;
+    cursor: pointer;
+    box-shadow: 10px 11px 24px -6px rgba(134,15,15,0.74);
+-webkit-box-shadow: 10px 11px 24px -6px rgba(134,15,15,0.74);
+-moz-box-shadow: 10px 11px 24px -6px rgba(134,15,15,0.74);
+
+    transition: all .5s ease-out;
+
+}
+
+.resultados .card h4 {
+    margin: 0px;
+    grid-area: titulo;
+    font-size: 22px;
+}
+
+.resultados .card p {
+    margin: 0px;
+    grid-area: descripcion;
+    font-size: 15px;
+}
+
+.resultados .card img {
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 20px;
+    grid-area: imagen;
+    border-radius: 50%;
+}
+.resltados .card span {
+    text-align: right;
+    grid-area: precio;
+}
+

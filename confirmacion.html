@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="description" content="Página web de blog de comida">   
+
+    <link rel="preload" href="estilos/estilo.css" as="style">
+    <link rel="stylesheet" href="estilos/estilo.css">   
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Header de la pagina confirmacion-->
+    <header>
+        <div class="logo centrar-texto">
+            <img src="imagenes/logo.png" width="60" height="60" alt="">
+            <a href="titulo">
+                <h1 class="no-margin">Blog Restaurante</h1>
+            </a>
+        </div>
+
+        <!--Navbar de navegacion por las diferentes paginas-->
+        <div class="navegacion">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="confirmacion.html">Confirmacion</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="contenedor-principal fondo-confirmacion">
+        <h3 class="centrar-texto">Confirmación de reserva</h3>
+       <div class="contacto-bg"></div>
+
+       <!--Formulario para pedir los datos de reservacion-->
+       <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombres</label>
+                <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">Correo electronico</label>
+                <input class="campo__field" type="text" placeholder="Tu Emal" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="numero">Numero de whatsapp</label>
+                <input type="text" class="campo__field" id="numero" />
+            </div>
+            
+            <div class="duo">
+                <div class="campo">
+                    <label class="campo__label" for="numpersonas">Cantidad de personas</label>
+                    <input class="campo__field" type="number" placeholder="" id="numpersonas">
+                </div>
+                <div class="campo">
+                    <lavel class="campo__label" for="fecha-reserva">Fecha Reserva</lavel>
+                    <input type="date" id="fecha-reserva">
+                </div>
+            </div>
+            <div class="campo">
+                <input class="boton" type="submit" value="Enviar">
+            </div>
+       </form>
+    </main>
+
+
+</body>
+</html>
